@@ -1,0 +1,186 @@
+html {
+    position: relative;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0 0 25px;
+    background: linear-gradient(to top, #E5E5E5, #B0B0C7);
+}
+
+.header {
+    background-color:#3E55AB;
+}
+
+.menu * {
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu ul,
+.menu ol {
+    list-style: none;
+    
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 55%;
+    
+}
+
+.menu > ul li a {
+    display: block;
+
+    padding: 15px 30px 15px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.menu > ul li {
+    position: relative;
+}
+
+.menu > ul li > a i.fa {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+}
+
+.menu > ul li:first-child {
+    border-radius: 5%;
+}
+
+.menu > ul li:last-child {
+    border-radius: 5%;
+}
+
+.menu li a:hover {
+    background: #25282A;
+    color: #ffffff;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+    border-radius: 5%;
+}
+
+.menu li ul {
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+
+.menu li > ul li {
+    border-radius: 5%;
+}
+
+.menu li > ul li a {
+    padding: 10px;
+    text-transform: none;
+    background: #83839E;
+}
+
+.menu li > ul li ul {
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+
+.menu li:hover > ul {
+    display: block;
+    border-radius: 5%;
+}
+
+.main {
+    max-width: 95%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.center-bar-content,
+.left-bar-content
+.right-bar-content {
+    border-radius: 5%;
+    padding: 10px 20px;
+}
+
+.left-bar {
+    float: left;
+    width: 15%;
+}
+
+.left-bar-content div {
+    text-align: left;
+}
+
+.left-bar-content img {
+    height: 150px;
+    margin: 20px 0;
+    width: 150px;
+}
+
+.center-bar {
+    float: left;
+    width: 50%;
+}
+
+.center-bar-content {
+    background: linear-gradient(to top, #B0B0C7, #E5E5E5);
+    margin-top: 10px;
+    margin: 5px 5px;
+}
+
+.center-bar-content img{
+    border-radius: 5%;
+}
+
+
+.right-bar {
+    float: right;
+    width: 35%;
+    height: 50%;
+}
+
+.right-bar-content {
+    text-align: center;
+
+}
+
+.right-bar-content {
+    margin: 40px 0;
+}
+
+
+footer {
+    vertical-align: bottom;
+    text-align: right;
+    line-height: 25px;
+    margin: 0;
+}
+
+@media print {
+    .header,
+    .side_left,
+    .side_right,
+    .footer,
+    img {
+        display: none;
+    }
+    
+    .main,
+    .content,
+    .main_block {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+
