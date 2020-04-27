@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заклинания</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="modal" tabindex="-1" role="dialog" id="goToOldModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Посететить официальный источник?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Здесь вы можете перейти на официальный портал Wizards of the coast, где сможете подробнее
+                        ознакомиться с миром D&D и, возможно, обрести новое увлечение.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://dnd.wizards.com">
+                        <button type="button" class="btn btn-info">В добрый путь!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-12 nopadding">
+            <nav class="navbar navbar-light navbar-expand-sm" style="background-color: #e3f2fd;">
+                <a class="navbar-brand" href="#">
+                    <img src="dnd_logo.png" width="60" height="30" class="d-inline-block align-top" alt="">
+                    Аркана
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" data-toggle="tooltip" data-placement="bottom"
+                                title="Истоки"><i class="fas fa-dice-d20"></i> Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span data-toggle="tooltip" data-placement="bottom" title="Новые архетипы классов"><i
+                                        class="fas fa-fist-raised"></i> Классы</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="warrior.html">Воин</a>
+                                <a class="dropdown-item" href="rogue.html">Плут</a>
+                                <a class="dropdown-item" href="soreccer.html">Чародей</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="spells.html" data-toggle="tooltip" data-placement="bottom"
+                                title="Новые псионические заклинания"><i class="fas fa-hat-wizard"></i> Заклинания</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-info my-2 my-sm-0" data-toggle="tooltip" data-placement="bottom"
+                        title="D&D Homepage" onclick="$('#goToOldModal').modal('show')"><i
+                            class="fab fa-wizards-of-the-coast"></i> Официальныц источник
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <br>
+        <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Заклинания</li>
+                </ol>
+            </nav>
+        <br>
+        <div class="container">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Заклинание</th>
+                    <th>Описание</th>
+                    <th>Класс</th>
+                    <th>Круг</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Осколок разума</td>
+                    <td>Очарование<br>
+                        Время сотворения: 1 действие<br>
+                        Дистанция: 60 футов<br>
+                        Компоненты : В<br>
+                        Длительность: 1 раунд<br>
+                        Вы направляете дезориентирующий всплеск психической энергии в разум одного существа, которое вы
+                        можете видеть в радиусе действия заклинания. Цель должна пройти Испытание по Интеллекту. Если
+                        цель провалила Испытание, то она получает 1d6 психического урона. Также, когда существо
+                        совершает Испытание в первый раз до конца вашего следующего хода, оно должно бросить 1d4 и
+                        отнять выпавшее значение от проверки Испытания.<br>
+                        Урон от заклинания увеличивается на 1d6 при достижении определенного уровня: 5 уровня (2d6), 11
+                        уровня (3d6) и 17 уровня (4d6)</td>
+                    <td>Волшебник, Чародей, Колдун</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Интеллектаульная крепость</td>
+                    <td>Преграждение<br>
+                        Время сотворения: 1 действие<br>
+                        Дистанция: 90 футов<br>
+                        Компоненты : В<br>
+                        Длительность: 1 раунд<br>
+                        Вы направляете копье из псионической энергии в разум одного существа, которое вы можете видеть в
+                        пределах дистанции. Существо должно совершить Испытание по Интеллекту. При провале оно получает
+                        3d6 психического урона и не может использовать реакцию до конца своего следующего хода. Более
+                        того, в свой следующий ход оно может решить, будет ли оно двигаться, совершать
+                        действиеилибонусноедействие.Ономожет выбрать только одну активность из трех. При успехе цель
+                        получает только половину урона и сопротивление к психическому урону, а также преимущество к
+                        Испытаниям по Интеллекту, Мудрости и Харизме.<br>
+                        <b>На высоких уровнях.</b>Когда вы используете это заклинание, затрачивая ячейку заклинаний 5
+                        круга и выше, вы можете взять целью этого заклинания одно дополнительное существо за каждый круг
+                        свыше 4. Существа должны быть в пределах 30 футов друг от друга, чтобы их можно было сделать
+                        целью.
+                    </td>
+                    <td>Волшебник, Чародей, Бард</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Укол разума</td>
+                    <td>Очарование<br>
+                        Время сотворения: 1 действие<br>
+                        Дистанция: 90 футов<br>
+                        Компоненты : В<br>
+                        Длительность: 1 раунд<br>
+                        Вы направляете копье из псионической энергии в разум одного существа, которое вы можете видеть в
+                        пределах дистанции. Существо должно совершить Испытание по Интеллекту. При провале оно получает
+                        3d6 психического урона и не может использовать реакцию до конца своего следующего хода. Более
+                        того, в свой следующий ход оно может решить, будет ли оно двигаться, совершать
+                        действиеилибонусноедействие.Ономожет выбрать только одну активность из трех. При успехе цель
+                        получает только половину урона и не получает никаких других эффектов от заклинания.<br>
+                        <b>На высоких уровнях.</b>Когда вы используете это заклинание, тратя при этом ячейку 3 круга и
+                        выше, вы можете сделать целью этого заклинания еще одно существо за каждую ячейку заклинания
+                        выше 2 круга. Существа должны находиться в пределах 30 футов друг от друга, если вы делаете их
+                        целями заклинания.
+                    </td>
+                    <td>Волшебник, Чародей</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+</body>
+
+</html>
