@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Воин</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="modal" tabindex="-1" role="dialog" id="goToOldModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Посететить официальный источник?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Здесь вы можете перейти на официальный портал Wizards of the coast, где сможете подробнее
+                        ознакомиться с миром D&D и, возможно, обрести новое увлечение.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://dnd.wizards.com">
+                        <button type="button" class="btn btn-info">В добрый путь!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-12 nopadding">
+            <nav class="navbar navbar-light navbar-expand-sm" style="background-color: #e3f2fd;">
+                <a class="navbar-brand" href="#">
+                    
+                    <img src="dnd_logo.png" width="60" height="30" class="d-inline-block align-top" alt="">
+                    
+                    Аркана
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" data-toggle="tooltip" data-placement="bottom"
+                                title="Истоки"><i class="fas fa-dice-d20"></i> Главная</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span data-toggle="tooltip" data-placement="bottom" title="Новые архетипы классов"><i
+                                        class="fas fa-fist-raised"></i> Классы</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="warrior.html">Воин</a>
+                                <a class="dropdown-item" href="rogue.html">Плут</a>
+                                <a class="dropdown-item" href="soreccer.html">Чародей</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="spells.html" data-toggle="tooltip" data-placement="bottom"
+                                title="Новые псионические заклинания"><i class="fas fa-hat-wizard"></i> Заклинания</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-info my-2 my-sm-0" data-toggle="tooltip" data-placement="bottom"
+                        title="D&D Homepage" onclick="$('#goToOldModal').modal('show')"><i
+                            class="fab fa-wizards-of-the-coast"></i> Официальныц источник
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <br>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item"><a href="warrior.html">Классы</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Воин</li>
+            </ol>
+        </nav>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#Пси-рыцарь">Пси-рыцарь</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Пси-талант">Псионический талант</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#адепт">Адепт-телекинетик</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#метаболизм">Усиденный пси метаболизм</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#сила">Оплот силы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#мастер">Мастер телекинетики</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="Пси-рыцарь">
+                    <br>
+                    <span class="badge badge-warning"><h3>Новый архетип</h3></span><br>
+                    <br>
+                    Пробудив в себе псионическую силу, Пси-Рыцарь — это воин, дополняющий свою физическую мощь при
+                    помощи усиленных пси атак оружием, телекинетических хлыстов и барьеров из ментальной силы. Многие
+                    гитиянки тренируются, чтобы стать подобными рыцарями. К поклонникам этих традиций также относятся
+                    некоторые высшие эльфы. В мире Атас [«Мир Темного Солнца»] известные гладиаторы на аренах
+                    Короля-Чародея очень часто являются Пси-Рыцарями. В Эберроне псионики-калаштары рассматривают
+                    вступление в ряды подобного рыцарства как поступок истинной чести.<br>
+                    Будучи Пси-Рыцарем, вы могли взрастить свои псионические особенности через самостоятельную
+                    дисциплину, сумели раскрыть их при помощи опытного наставника, или же вы познали ее в академии, чья
+                    работа направлена на развитие силы разума как в качестве оружия, так и в качестве щита.
+                </div>
+                <div class="tab-pane fade" id="Пси-талант">
+                    <br>
+                    <i>3 уровень, особенность Пси-Рыцаря</i></br>
+                    <br>
+                    В вас скрыт источник псионической силы, энергии, которая угасает и усиливается в те моменты, когда
+                    вы используете ее разными способами. Эта сила представлена в виде кости Псионического Таланта,
+                    которая начинается с размерности d6.</br>
+                    <b>Варианты Псионического Таланта.</b> Вы можете использовать кость Псионического Таланта
+                    несколькими
+                    способами:</br>
+                    <ul>
+                        <li><b>Защитное поле.</b> Когда вы или другое существо, которое вы можете видеть в пределах 30
+                            футов, получает
+                            урон, вы можете использовать свою реакцию, совершить бросок кости Псионического Таланта и
+                            снизить
+                            количество урона на значение на кости + модификатор Интеллекта (минимальное снижение равно
+                            1).
+                            Использовав эту особенность, вы мгновенно создаете щит, сотканный из телекинетической
+                            силы.</br>
+                        </li>
+                        <li><b>Телекинетический удар.</b> Вы можете наделить ваши атаки телекинетической силой. Один раз
+                            в
+                            каждый свой
+                            ход, сразу же после того, как вы нанесли урон при помощи оружия по цели в пределах 30 футов
+                            от
+                            вас,
+                            вы можете совершить бросок кости Псионического Таланта и также нанести урон силой по этой
+                            цели,
+                            равный значению на кости Псионического Таланта.</br></li>
+                        <li><b>Усиленный пси прыжок. </b>Когда вы совершаете прыжок в длину или в высоту, вы можете
+                            совершить бросок
+                            кости Псионического Таланта и увеличить дистанцию прыжка вплоть до значения, равному
+                            удвоенному
+                            значению на кости + удвоенному значению Интеллекта (минимум 1 дополнительный фут). Это
+                            дополнительная дистанция стоит вам только 1 фут передвижения.</br></li>
+                    </ul>
+                    <b>Изменение кости Псионического Таланта.</b><br>Если вы выбрасываете максимальное значение на кости
+                    во время
+                    броска Псионического Таланта, то размерность вашей кости снижается на одну. Эта механика является
+                    отражением того, что ваша псионическая энергия выгорает. К примеру, если вы бросили на d6 значение
+                    6, то кость Псионического Таланта становится d4. Если вы бросили d4 и получили 4, то вы не сможете
+                    больше использовать эту кость до конца долгого отдыха.<br>
+                    Такая же схема работает и наоборот. Если выпадает 1 на кости Псионического Таланта, то эта кость
+                    увеличивается на одну размерность. Эта особенность отражает вашу способность сохранять псионическую
+                    энергию на будущее. К примеру, если вы бросили d4 и получили 1, то ваша кость Псионического Таланта
+                    становится d6.<br>
+                    Каждый раз, когда вы заканчиваете долгий отдых, ваша кость Псионического Таланта возвращается к
+                    базовой размерности. Когда вы достигаете определенного уровня в этом классе, ваша базовая
+                    размерность кости Псионического Таланта увеличивается: на 5 уровне она становится d8, на 11 - d10, а
+                    на 17 - d12.<br>
+                    <b>Пополнение пси</b><br>В качестве бонусного действия вы можете успокоить свой разум на мгновение и
+                    восстановить вашу кость Псионического Таланта до базовой размерности. Вы не сможете повторно
+                    использовать Пополнение пси до конца долгого отдыха.<br>
+                </div>
+                <div class="tab-pane fade" id="адепт">
+                    <br>
+                    <i>7 уровень, особенность Пси-Рыцаря</i><br>
+                    <br>
+                    Вы научились новому способу использовать свой телекинез:<br>
+                    <ul>
+                        <li><b>Псионический толчок.</b>Когда вы наносите урон при помощи Телекинетического удара из
+                            Псионических Талантов, вы можете вынудить цель пройти Испытание по Силе со Сложностью 8 +
+                            бонус умения + ваш модификатор Интеллекта. В случае провала, цель падает ничком или
+                            передвигается на расстояние вплоть до 10 футов в любом горизонтальном направлении.<br></li>
+                        <li><b>Телекинетическое передвижение.</b>Если ваша кость Псионического Таланта доступна, вы
+                            можете передвигать объект или существо при помощи силы разума. В качестве действия вы
+                            нацеливаетесь на один лежащий без дела объект размера Крупный и меньше или на одно согласное
+                            существо, кроме вас. Если вы можете видеть цель и она находится в пределах 30 футов от вас,
+                            вы можете передвинуть ее на расстояние до 30 футов в незанятое пространство, которое вы
+                            можете видеть. В качестве альтернативы, если это Маленький объект, вы можете переместить его
+                            к себе в руку или из вашей руки. В любом из описанных случаев вы можете двигать цель
+                            горизонтально, вертикально или по обеим осям. Когда вы используете действие подобным
+                            образом, ваша кость Псионических Талантов уменьшается в размерности.<br></li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="метаболизм">
+                    <br>
+                    <i>10 уровень, особенность Пси-Рыцаря</i></br>
+                    <br>
+                    Псионическая энергия, текущая в ваас, укрепила ваше тело и разум. Вы получаете устойчивость к урону
+                    ядом и психическому урону, а также получаете неуязвимость к состоянию отравлен.</br>
+                </div>
+                <div class="tab-pane fade" id="сила">
+                    <br>
+                    <i>15 уровень, особенность Пси-Рыцаря</i></br>
+                    <br>
+                    Вы можете защитить себя и других при помощи телекинетической силы. В качестве бонусного действия вы
+                    можете выбрать существ, включая вас, которые находятся в пределах 30 футов и которых вы можете
+                    видеть. Их число не может превышать модификатор вашего Интеллекта (минимум 1 существо). Каждое из
+                    выбранных существ защищено половинным укрытием на 1 минуту или до тех пор, пока вы не окажетесь
+                    недееспособными.</br>
+                    Использовав эту особенность, вы не сможете использовать ее повторно до конца долгого отдыха, если
+                    только вы не снизите свою кость Псионического Таланта на одну размерность, чтобы использовать эту
+                    особенность еще раз.
+                </div>
+                <div class="tab-pane fade" id="мастер">
+                    <br>
+                    <i>18 уровень, особенность Пси-Рыцаря</i></br>
+                    <br>
+                    Ваша способность передвигаться существ и объекты при помощи своего разума практически неоспорима.
+                    Если ваша кость Псионического Таланта доступна, вы можете использовать заклинание телекинез без
+                    затрат компонентов. Ваша характеристика для этого заклинания — Интеллект. Когда вы используете это
+                    заклинание, ваша кость Псионического Таланта снижается на одну разрядность.</br>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+</body>
+
+</html>
